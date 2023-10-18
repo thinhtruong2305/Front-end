@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập tổng hợp javascript</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <script type="text/javascript" src="../js/validation.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="tab-bar">
+            <a id="tabDangKy" href="#" onclick="OnDangKy()">Đăng ký</a>
+            <a id="tabDangNhap" href="#" onclick="OnDangNhap()">Đăng nhập</a>
+        </div>
+        <div id="dangKy">
+            <form action="#" method="post">
+                <div class="title">
+                    <h1>Đăng ký thành viên</h1>
+                </div>
+                <div class="content">
+                    <table>
+                        <tr>
+                            <td>
+                                <span>Tên đăng nhập</span>
+                            </td>
+                            <td>
+                                <input type="text" name="userNameDangKy" id="userNameDangKy" 
+                                onfocus="LamMoiTrangThaiInput('userNameDangKy', 'thongBaoUserNameDangKy')"
+                                onblur="return KiemTra4TS('userNameDangKy', 'thongBaoUserNameDangKy', 8, 16)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="thongBaoUserNameDangKy" class="thong-bao"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Mật khẩu</span>
+                            </td>
+                            <td>
+                                <input type="password" name="passwordDangKy" id="passwordDangKy" 
+                                onfocus="LamMoiTrangThaiInput('passwordDangKy', 'thongBaoPasswordDangKy')"
+                                onblur="return KiemTra4TS('passwordDangKy', 'thongBaoPasswordDangKy', 8, 16)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="thongBaoPasswordDangKy" class="thong-bao"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Email</span>
+                            </td>
+                            <td>
+                                <input type="text" name="email" id="email"
+                                onfocus="LamMoiTrangThaiInput('email', 'thongBaoEmail')"
+                                onblur="return KiemTra2TS('email', 'thongBaoEmail')">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="thongBaoEmail" class="thong-bao"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Nghề nghiệp</span>
+                            </td>
+                            <td>
+                                <select id="nghenghiep"
+                                onfocus="LamMoiTrangThaiInput1TS('thongBaoNgheNghiep')">
+                                    <option>Vui lòng chọn</option>
+                                    <option>Lập trình viên</option>
+                                    <option>Giảng viên</option>
+                                    <option>Tester</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="thongBaoNgheNghiep" class="thong-bao"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Tuổi </span>
+                            </td>
+                            <td>
+                                <select type="text" name="tuoi" id="tuoi"
+                                onfocus="LamMoiTrangThaiInput('tuoi', 'thongBaoTuoi')">
+                                <option>Vui lòng chọn</option>
+                                <script type="text/javascript">
+                                    for (var i = 1; i <= 100; i++) {
+                                        document.write("<option>" + i + "<option/>")
+                                    }
+                                </script>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="thongBaoTuoi" class="thong-bao"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Giới tính </span></td>
+                            <td>
+                                <input type="radio" name="gioiTinh" id="nam"
+                                onfocus="LamMoiTrangThaiInput1TS('thongBaoGioiTinh')">
+                                <span>Nam</span>
+                                <input type="radio" name="gioiTinh" id="nu"
+                                onfocus="LamMoiTrangThaiInput1TS('thongBaoGioiTinh')">
+                                <span>Nữ</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="thongBaoGioiTinh" class="thong-bao"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Đăng ký" class="btn-submit" onclick="return KiemTraNullDangKy()">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer">
+                    <span>Bạn đã có tài khoản rồi?<a href="#" onclick="OnDangNhap()"> Đăng nhập</a></span>
+                </div>
+            </form>
+        </div>
+        <div id="dangNhap">
+            <form action="" method="post">
+                <div class="title">
+                    <h1>Đăng nhập</h1>
+                </div>
+                <div class="content">
+                    <table>
+                        <tr>
+                            <td>
+                                <span>Tên đăng nhập </span>
+                            </td>
+                            <td>
+                                <input type="text" name="usernameDangNhap" id="usernameDangNhap">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="thongBaoUserNameDangNhap" class="thong-bao"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Mật khẩu </span>
+                            </td>
+                            <td>
+                                <input type="password" name="passwordDangNhap" id="passwordDangNhap">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="thongBaoPasswordDangNhap" class="thong-bao"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" name="ghiNho" id="ghiNho"><span>Ghi nhớ lần sau</span>
+                            </td>
+                        </tr>
+                        <tr class="feature-dang-nhap">
+                            <td colspan="2">
+                                <span> <a href="#"><span>Quên mật khẩu?</span></a></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Đăng nhập" class="btn-submit">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer">
+                    <span>Bạn đã chưa có tài khoản?<a href="#" onclick="OnDangKy()"> Đăng ký</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

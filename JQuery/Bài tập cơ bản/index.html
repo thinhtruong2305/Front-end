@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Ẩn tất cả mọi thẻ
+            // $("button").click(function(){
+            //     $("*").hide();
+            // });
+
+            //Ẩn thẻ hiện tại
+            // $("button").click(function(){
+            //     $(this).hide();
+            // });
+            
+            //Ẩn thẻ p theo class
+            // $("button").click(function(){
+            //     $("p.test").hide();
+            // });
+
+            //Ẩn thẻ p đầu tiên
+            // $("button").click(function(){
+            //     $("p:first").hide();
+            // });
+            
+            //Ẩn thẻ li đầu tiên của ul đầu tiên
+            // $("button").click(function(){
+            //     $("ul li:first").hide();
+            // });
+            
+            //Ẩn thẻ li đầu tiên của mọi thẻ ul
+            // $("button").click(function(){
+            //     $("ul li:first-child").hide();
+            // });
+
+            //Ẩn thẻ a có target = _blank
+            // $("button").click(function(){
+            //     $("a[target = '_blank']").hide();
+            // });
+
+            //Ẩn thẻ a có target = _blank
+            // $("button").click(function(){
+            //     $("a[target != '_blank']").hide();
+            // });
+
+            //Dòng chẵn trong bảng sẽ là màu vàng
+            $("tr:even").css("background-color", "yellow");
+
+            //Dòng lẻ trong bảng sẽ là màu vàng
+            //$("tr:odd").css("background-color", "yellow");
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cơ bản làm quen</h2>
+    <button style="padding-top: 5px; background: red; font-size: 20px;">Demo Selector</button>
+    <h2>Học lập trình front-end</h2>
+    <p class="test">Đang tự học nha</p>
+    <p>Học front-end từ html, css, js giờ là jquery nha</p>
+    <p>Danh sách .net</p>
+    <ul>
+        <li>C# căn bản, nâng cao</li>
+        <li>Phần mềm 3 lớp</li>
+        <li>ASP.NET căn bản, nâng cao</li>
+    </ul>
+    <p>Danh sách Android</p>
+    <ul>
+        <li>Android cơ bản</li>
+        <li>Android nâng cao</li>
+        <li>Android toàn tập</li>
+    </ul>
+    <p><a href="https://www.youtube.com" target="_blank">youtube</a></p>
+    <p><a href="https://www.facebook.com">facebook</a></p>
+    <table border="1">
+        <tr>
+            <th>Khóa học</th>
+            <th>Công nghệ</th>
+        </tr>
+        <tr>
+            <td>HTML, CSS, JS, Bootstrap</td>
+            <td>Front-end</td>
+        </tr>
+        <tr>
+            <td>PHP cơ bản, nâng cao</td>
+            <td>Back-end</td>
+        </tr>
+        <tr>
+            <td>Android cơ bản, nâng cao</td>
+            <td>Mobile</td>
+        </tr>
+        <tr>
+            <td>Lập trình IOS</td>
+            <td>Nobile</td>
+        </tr>
+    </table>
+</body>
+</html>

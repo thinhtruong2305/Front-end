@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //click
+            $("button").click(function(){
+                $("button").css("background-color", "gray");
+            });
+
+            //mouse enter
+            $("button").mouseenter(function(){
+                $("button").css("background-color", "red");
+            });
+
+            //mouse down
+            $("button").mousedown(function(){
+                $("button").css("background-color", "green");
+            });
+
+            //mouse up
+            $("button").mouseup(function(){
+                $("button").css("background-color", "blue");
+            });
+
+            //hover
+            $("button").mouseenter(function(){
+                $("button").css("background-color", "yellow");
+            });
+
+            //focus
+            $("input").focus(function(){
+                $("input").css("background-color", "white");
+            });
+
+            //blur
+            $("input").blur(function(){
+                $("input").css("background-color", "gray");
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <button>muahahahaha</button>
+    <input type="text" name="" id="">
+</body>
+</html>

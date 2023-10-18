@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <form action="test.php" method="post" style="font-family: sans-serif; width: 500px; margin: 10px auto; background-color: aquamarine; border-radius: 5%;">
+            <div id="content" style="padding: 20px;">
+                <h1 style="text-align: center;">Sign up</h1>
+                <br />
+                <span style="display: inline-block; background-color: rgb(1, 202, 1); padding: 8px 15px 8px 15px; border-radius: 100%; font-size: 22px; color: white;"><strong>1</strong></span>
+                <span style="font-weight: bold; font-size: 20px; padding-left: 10px;">Your basic info</span>
+                <br />
+                <br />
+                <span style="font-size: 18px;">Name:</span>
+                <br />
+                <input type="text" name="userName" placeholder="Input your full-name" style="margin-top: 10px; margin-bottom: 10px; padding: 8px; width: -webkit-fill-available; border: none; font-size: 18px; border-radius: 15px;" />
+                <br />
+                <br />
+                <span style="font-size: 18px;">Email:</span>
+                <br />
+                <input type="email" name="email" placeholder="Input your email" style="margin-top: 10px; margin-bottom: 10px; padding: 8px; width: -webkit-fill-available; border: none; font-size: 18px; border-radius: 15px;" />
+                <br />
+                <br />
+                <span style="font-size: 18px;">Password:</span>
+                <br />
+                <input type="password" name="password" placeholder="Input your password" style="margin-top: 10px; margin-bottom: 10px; padding: 8px; width: -webkit-fill-available; border: none; font-size: 18px; border-radius: 15px;" />
+                <br />
+                <br />
+                <span style="font-size: 18px;">Age:</span>
+                <br />
+                <input type="radio" name="age" id="under13" value="under13" />
+                <span>Under 13</span>
+                <br />
+                <input type="radio" name="age" id="over13" value="over13" />
+                <span>Over 13</span>
+                <br />
+                <br />
+                <span style="display: inline-block; background-color: rgb(1, 202, 1); padding: 8px 15px 8px 15px; border-radius: 100%; font-size: 22px; color: white;"><strong>2</strong></span>
+                <span style="font-weight: bold; font-size: 20px; padding-left: 10px;">Your profile</span>
+                <br />
+                <br />
+                <span>Biography:</span>
+                <br />
+                <br />
+                <textarea id="biography" cols="38" rows="10" placeholder="Input your biography" style="font-size: 20px; border-radius: 15px; padding: 10px; resize: none;"></textarea>
+                <br />
+                <br />
+                <span>Job roles:</span>
+                <br />
+                <select name="job" id="job" style="border-radius: 10px; margin: 10px; padding: 10px; font-size: 15px;">
+                    <optgroup label="Web">
+                        <option value="front-end_developer">Front-End Developer</option>
+                        <option value="php_developer">PHP Developer</option>
+                        <option value="python_developer">Python Developer</option>
+                        <option value="rails_developer">Rails Developer</option>
+                        <option value="full-stack_developer">Full-Stack Developer</option>
+                        <option value="wordpress_developer">Wordpress Developer</option>
+                    </optgroup>
+                    <optgroup label="Mobile">
+                        <option value="android_developer">Android Developer</option>
+                        <option value="ios_developer">IOS Developer</option>
+                        <option value="mobile_designer">Mobile Designer</option>
+                    </optgroup>
+                    <optgroup label="Business">
+                        <option value="business_owner">Business Owner</option>
+                        <option value="sales">Sales</option>
+                    </optgroup>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="maintance">Maintance</option>
+                    <option value="tester">Tester</option>
+                    <option value="secretary">Secretary</option>
+                </select>
+                <br />
+                <span>Interests:</span>
+                <br />
+                <input type="checkbox" value="Developer" name="checkInterests">
+                <span>Developer</span>
+                <br />
+                <input type="checkbox" value="Design" name="checkInterests">
+                <span>Design</span>
+                <br />
+                <input type="checkbox" value="Business" name="checkInterests">
+                <span>Business</span>
+                <br />
+                <br />
+                <input type="submit" value="Sign up now" style="font-size: large; padding: 20px; width: 100%; color: white; background: rgb(67, 253, 21); border-radius: 5px; border: none;">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

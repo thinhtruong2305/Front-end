@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra lỗi form</title>
+</head>
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <span>User name: </span><input type="text" name="username" id="username">
+        <br/>
+        <p id="thongBaoUserName"></p>
+        <span>Phone: </span><input type="text" name="phone" id="phone">
+        <br/>
+        <p id="thongBaoPhone"></p>
+        <span>Email: </span><input type="text" name="email" id="email">
+        <br/>
+        <p id="thongBaoEmail"></p>
+        <br/>
+        <input type="submit" value="Kiểm tra nhập" onclick="return KiemTraNhapChua('username')">
+        <input type="submit" value="Kiểm tra tất cả là kí tự" onclick="return KiemTraTatCaLaKiTu('username')">
+        <input type="submit" value="Kiểm tra tất cả là số" onclick="return KiemTraTatCaLaSo('phone')">
+        <input type="submit" value="Kiểm tra email hợp lệ" onclick="return KiemTraEmail('email')">
+        <input type="submit" value="Kiểm tra min max" onclick="return KiemTraMinMax('username', 8, 12)">
+    </form>
+    <script src="../Bài tập DOM/content/js/DOM.js"></script>
+</body>
+</html>

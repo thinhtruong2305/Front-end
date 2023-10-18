@@ -1,0 +1,72 @@
+#thep1{
+    color: #05DE00;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+#thep2{
+    color: blue;
+    text-align: left;
+    font-size: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+#thep3{
+    color: rgb(250, 96, 25);
+    text-align: center;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: lighter;
+}
+ul{
+    /*list-style-type: circle;*/
+    list-style-image: url('../images/icons8-male-user-18.png');
+}
+ol li{
+    list-style-type: lower-greek;
+}
+a:link{
+    color: coral;
+}
+a:hover{
+    color: cadetblue;
+}
+a:visited{
+    color: darkgray;
+}
+a:active{
+    color: darkred;
+}
+#thea1:hover{
+    color: yellow;
+}
+#demo{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    border: solid 3px blue;
+    border-top: dashed 3px green;
+    border-left: groove 3px red;
+    border-right: double 3px pink;
+    border-bottom: dotted 3px black;
+    border-radius: 15%;
+    color: darkred;
+    padding: 10px 5px 10px 5px;
+    margin: 15px;
+    margin-bottom: 20px;
+}
+#demo-background-image-1{
+    background-image: url('../images/28056725_534818426905424_1612387343033170903_n.jpg');
+}
+#demo-background-image-2{
+    background-image: url('../images/28056725_534818426905424_1612387343033170903_n.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    width: 1000px;
+    margin: 50px;
+    margin-right: 200px;
+}

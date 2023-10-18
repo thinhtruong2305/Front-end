@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Ẩn
+            $("#an").click(function(){
+                $("#anHien").hide();
+            });
+
+            //Ẩn chậm
+            $("#anCham").click(function(){
+                $("#anHien").hide(2000);
+                //$("#anHien").hide("slow");
+            });
+
+            //Ẩn nhanh
+            $("#anNhanh").click(function(){
+                $("#anHien").hide(-2000);
+                //$("#anHien").hide("fast");
+            });
+
+            //Hiện
+            $("#hien").click(function(){
+                $("#anHien").show();
+            });
+
+            //Hiện chậm
+            $("#hienCham").click(function(){
+                $("#anHien").show(2000);
+                //$("#anHien").show("slow");
+            });
+
+            //Hiện nhanh
+            $("#hienNhanh").click(function(){
+                $("#anHien").show(-2000);
+                //$("#anHien").show("fast");
+            });
+
+            //Toggle
+            $("#toggle").click(function(){
+                $("#panel1").toggle();
+            });
+
+            //Toggle chậm
+            $("#toggleCham").click(function(){
+                $("#panel1").toggle(1200);
+                //$("#panel").toggle("slow");
+            });
+
+            //Toggle
+            $("#toggleNhanh").click(function(){
+                $("#panel1").toggle(-1200);
+                //$("#panel").toggle("fast");
+            });
+
+            //Fade in
+            $("#fadeIn").click(function(){
+                $("#panel2").fadeIn();
+            });
+
+            //Fade in chậm
+            $("#fadeInCham").click(function(){
+                $("#panel2").fadeIn(2000);
+                //$("#panel2").fadeIn("slow");
+            });
+
+            //Fade in nhanh
+            $("#fadeInNhanh").click(function(){
+                $("#panel2").fadeIn(-2000);
+                //$("#panel2").fadeIn("fast");
+            });
+
+            //Fade out
+            $("#fadeOut").click(function(){
+                $("#panel2").fadeOut();
+            });
+
+            //Fade out chậm
+            $("#fadeOutCham").click(function(){
+                $("#panel2").fadeOut(2000);
+                //$("#panel2").fadeOut("slow");
+            });
+
+            //Fade out nhanh
+            $("#fadeOutNhanh").click(function(){
+                $("#panel2").fadeOut(-2000);
+                //$("#panel2").fadeOut("fast");
+            });
+
+            //Fade Toggle
+            $("#fadeToggle").click(function(){
+                $("#panel2").fadeToggle();
+            });
+
+            //Fade Toggle chậm
+            $("#fadeToggleCham").click(function(){
+                $("#panel2").fadeToggle(1200);
+                //$("#pane2").fadeToggle("slow");
+            });
+
+            //Fade Toggle nhanh
+            $("#fadeToggleNhanh").click(function(){
+                $("#panel2").fadeToggle(-1200);
+                //$("#pane2").fadeToggle("fast");
+            });
+
+            //Fade To chậm
+            $("#fadeToCham").click(function(){
+                $("#panel2").fadeTo(1200, 0.2);
+                //$("#pane2").fadeTo("slow", 0.2);
+            });
+
+            //Fade To nhanh
+            $("#fadeToNhanh").click(function(){
+                $("#panel2").fadeTo(-1200, 0.5);
+                //$("#pane2").fadeTo("fast", 0.5);
+            });
+
+            //Slide up
+            $("#slideUp").click(function(){
+                $("#panel3").slideUp();
+            });
+
+            //Slide up chậm
+            $("#slideUpCham").click(function(){
+                $("#panel3").slideUp(2000);
+                //$("#panel3").slideUp("slow");
+            });
+
+            //Slide up nhanh
+            $("#slideUpNhanh").click(function(){
+                $("#panel3").slideUp(-2000);
+                //$("#panel3").slideUp("fast");
+            });
+
+            //Slide down
+            $("#slideDown").click(function(){
+                $("#panel3").slideDown();
+            });
+
+            //Slide down chậm
+            $("#slideDownCham").click(function(){
+                $("#panel3").slideDown(2000);
+                //$("#panel3").slideDown("slow");
+            });
+
+            //Slide down nhanh
+            $("#slideDownNhanh").click(function(){
+                $("#panel3").slideDown(-2000);
+                //$("#panel3").slideDown("fast");
+            });
+
+            //Slide Toggle
+            $("#slideToggle").click(function(){
+                $("#panel3").slideToggle();
+            });
+
+            //Slide Toggle chậm
+            $("#slideToggleCham").click(function(){
+                $("#panel3").slideToggle(1200);
+                //$("#pane3").slideToggle("slow");
+            });
+
+            //Slide Toggle nhanh
+            $("#slideToggleNhanh").click(function(){
+                $("#panel3").slideToggle(-1200);
+                //$("#panel3").slideToggle("fast");
+            });
+
+            //Lưu ý animate muốn nó di chuyển phải có position absolute
+            //Animate {1 param} và during 500 mil
+            $("#animate1Param").click(function(){
+                $("#frame1").animate({left: '200px'}, 500);
+            });
+
+            //Animate {nhiều param} và during 500 mil
+            $("#animateNParams").click(function(){
+                $("#frame1").animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '500px',
+                    width: '500px'
+                }, 500);
+            });
+
+            //Animate {nhiều param} và during 500 mil, có sự thay đổi sau mỗi lần bấm nhờ dấu +=
+            $("#animateNParamsChange").click(function(){
+                $("#frame1").animate({
+                    left: '+=50px',
+                    opacity: '0.5',
+                    height: '500px',
+                    width: '500px'
+                }, 500);
+            });
+
+            //Slide down for Stop
+            $("#slideUpStop").click(function(){
+                $("#panel4").slideUp(5000);
+            });
+
+            //Stop
+            $("#stop").click(function(){
+                $("#panel4").stop();
+            });
+
+            //Chuỗi hiệu ứng kết hợp
+            $("#chuoiAnimate").click(function(){
+                $("#panel4").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Ẩn hiện toggle</h2>
+    <p id="anHien">nhấn ẩn hiện để kích hoạt hiệu ứng</p>
+    <button id="an">Ẩn</button>
+    <button id="hien">Hiện</button>
+    <button id="anCham">Ẩn chậm</button>
+    <button id="hienCham">Hiện chậm</button>
+    <button id="anNhanh">Ẩn nhanh</button>
+    <button id="hienNhanh">Hiện nhanh</button>
+    <br /><br />
+    <h2>Toggle</h2>
+    <p>Danh sách .net</p>
+    <ul id="panel1">
+        <li>C# căn bản, nâng cao</li>
+        <li>Phần mềm 3 lớp</li>
+        <li>ASP.NET căn bản, nâng cao</li>
+    </ul>
+    <button id="toggle">Toggle</button>
+    <button id="toggleCham">Toggle chậm</button>
+    <button id="toggleNhanh">Toggle nhanh</button>
+    <br /><br />
+    <h2>Fade in - fade out - fade toggle - fade to</h2>
+    <p>Danh sách .net</p>
+    <ul id="panel2">
+        <li>C# căn bản, nâng cao</li>
+        <li>Phần mềm 3 lớp</li>
+        <li>ASP.NET căn bản, nâng cao</li>
+    </ul>
+    <button id="fadeIn">Fade in</button>
+    <button id="fadeOut">Fade out</button>
+    <button id="fadeInCham">Fade in chậm</button>
+    <button id="fadeOutCham">Fade out chậm</button>
+    <button id="fadeInNhanh">Fade in nhanh</button>
+    <button id="fadeOutNhanh">Fade out nhanh</button>
+    <button id="fadeToggle">Fade toggle</button>
+    <button id="fadeToggleCham">Fade toggle chậm</button>
+    <button id="fadeToggleNhanh">Fade toggle nhanh</button>
+    <button id="fadeToCham">Fade to chậm</button>
+    <button id="fadeToNhanh">Fade to nhanh</button>
+    <br /><br />
+    <h2>Slide up - slide down - slide toggle</h2>
+    <p>Danh sách .net</p>
+    <ul id="panel3">
+        <li>C# căn bản, nâng cao</li>
+        <li>Phần mềm 3 lớp</li>
+        <li>ASP.NET căn bản, nâng cao</li>
+    </ul>
+    <button id="slideUp">Slide up</button>
+    <button id="slideDown">Slide down</button>
+    <button id="slideUpCham">Slide up chậm</button>
+    <button id="slideDownCham">Slide down chậm</button>
+    <button id="slideUpNhanh">Slide up nhanh</button>
+    <button id="slideDownNhanh">Slide down nhanh</button>
+    <button id="slideToggle">Slide toggle</button>
+    <button id="slideToggleCham">Slide toggle chậm</button>
+    <button id="slideToggleNhanh">Slide toggle nhanh</button>
+    <br /><br />
+    <h2>Animate - stop - chain animation</h2>
+    <ul id="panel4">
+        <li>C# căn bản, nâng cao</li>
+        <li>Phần mềm 3 lớp</li>
+        <li>ASP.NET căn bản, nâng cao</li>
+    </ul>
+    <br />
+    <button id="animate1Param">Animate 1 param</button>
+    <button id="animateNParams">Animate nhiều params</button>
+    <button id="animateNParamsChange">Animate nhiều params có thay đổi</button>
+    <button id="slideUpStop">Slide up</button>
+    <button id="stop">Stop</button>
+    <button id="chuoiAnimate">Hiệu ứng chuỗi</button>
+    <br /><br />
+    <div id="frame1" style="height: 100px; width: 100px; background-color: brown; position: absolute;"></div>
+</body>
+</html>

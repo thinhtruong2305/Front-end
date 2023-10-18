@@ -1,0 +1,17 @@
+.important{
+    font-weight: bold;
+    font-size: xx-large;
+    color: blue;
+}
+.red{
+    color: red;
+}
+#p1{
+    background-color: red;
+}
+#p2{
+    background-color: green;
+}
+#p3{
+    background-color: blue;
+}

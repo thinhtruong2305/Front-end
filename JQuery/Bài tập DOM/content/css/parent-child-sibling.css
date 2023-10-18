@@ -1,0 +1,27 @@
+body *{
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+.normal{
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+.pick{
+    border: 2px solid red;
+    color: red;
+}
+.nhap{
+    border: 1px solid black;
+    color: black;
+}
+.nutNhap{
+    display: inline;
+    border: 1px solid black;
+    color: black;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../Bài tập DOM/content/css/parent-child-sibling.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Parent</h1>
+    <div id="parent" class="abc"> div class .abc
+        <ul id="bcd"> ul id #bcd
+            <li>li
+                <span></span>
+            </li>
+        </ul>
+    </div>
+    <input type="text" class="nhap" id="nhapThe" placeholder="Nhập thẻ">
+    <input type="text" class="nhap" id="nhapId" placeholder="Nhập id">
+    <input type="text" class="nhap" id="nhapClass" placeholder="Nhập class">
+    <button id="directParent" class="nutNhap">Lấy cha trực tiếp của thẻ</button>
+    <button id="allParent" class="nutNhap">lấy tất cả cha</button>
+    <button id="idParent" class="nutNhap">Lấy cha/ông theo id</button>
+    <button id="classParent" class="nutNhap">Lấy cha/ông theo class</button>
+    <br><br>
+    <h1>Children</h1>
+    <div>div
+        <p id="def">p #def
+            <span>span</span>
+        </p>
+        <p class="fdc">p .fdc
+            <span>span</span>
+        </p>
+        <span>span</span>
+    </div>
+    <div style="float: left; border: none; padding: 7px;">Phần cha
+        <input type="text" class="nhap" id="nhapTheCha" placeholder="Nhập thẻ cha">
+        <input type="text" class="nhap" id="nhapIdCha" placeholder="Nhập id cha">
+        <input type="text" class="nhap" id="nhapClassCha" placeholder="Nhập class cha">
+    </div>
+    <div style="padding: 20px;">Phần con
+        <input type="text" class="nhap" id="nhapTheCon" placeholder="Nhập thẻ con chỉ định">
+        <input type="text" class="nhap" id="nhapIdCon" placeholder="Nhập id con chỉ định">
+        <input type="text" class="nhap" id="nhapClassCon" placeholder="Nhập class con chỉ định">
+    </div>
+    <button id="directChild" class="nutNhap">Lấy con của thẻ hoặc của id hoặc class</button>
+    <button id="findChild" class="nutNhap">Lấy con theo thẻ, id, class</button>
+    <br><br>
+    <h1>Anh em(sibling)</h1>
+    <div>
+        <p>p</p>
+        <span>span</span>
+        <h3 id="jkl">h3</h3>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3 class="pow">h3</h3>
+        <h4 id="mno">h4</h4>
+        <span>span</span>
+        <h6>h6</h6>
+        <p class="ghi">p</p>
+    </div>
+    <div style="float: left; border: none; padding: 7px;">Phần chủ
+        <input type="text" class="nhap" id="nhapTheChu" placeholder="Nhập thẻ chủ">
+        <input type="text" class="nhap" id="nhapIdChu" placeholder="Nhập id chủ">
+        <input type="text" class="nhap" id="nhapClassChu" placeholder="Nhập class chủ">
+    </div>
+    <div style="padding: 20px;">Phần anh em
+        <input type="text" class="nhap" id="nhapTheAnhEm" placeholder="Nhập thẻ anh em chỉ định">
+        <input type="text" class="nhap" id="nhapIdAnhEm" placeholder="Nhập id anh em chỉ định">
+        <input type="text" class="nhap" id="nhapClassAnhEm" placeholder="Nhập class anh em chỉ định">
+    </div>
+    <button id="directSibling" class="nutNhap">Lấy anh em của thẻ hoặc của id hoặc class chủ</button>
+    <button id="nextSibling" class="nutNhap">Lấy theo thẻ, id, class tiếp theo thẻ, id, class chủ</button>
+    <button id="prevSibling" class="nutNhap">Lấy theo thẻ, id, class trước thẻ, id, class chủ</button>
+    <button id="nextUtilSibling" class="nutNhap">Lấy theo thẻ, id, class tiếp theo tới thẻ, id, class chủ</button>
+    <button id="prevUtilSibling" class="nutNhap">Lấy theo thẻ, id, class trước tới thẻ, id, class chủ</button>
+    <script src="../Bài tập DOM/content/js/parent-child-sibling.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bài tập javascript cơ bản</title>
+</head>
+<body>
+	<input type="button" id="btn" value="nhấn vào đây" onclick="KiemTraNhap(8)" onmouseenter="ChangeColorButton(1)" onmouseout="ChangeColorButton(2)" onmousedown="ChangeColorButton(3)" onmouseup="ChangeColorButton(4)"/>
+	<input type="button" name="kiemTraHocLuc" value="kiểm tra học lực" onclick="KiemTraHocLuc(8)">
+	<input type="button" name="xuat10Cau" value="xuất 10 câu" onclick="Xuat10Cau()">
+	<input type="text" id="test" onfocus="ChangeColor(1)" onblur="ChangeColor(2)">
+	<p id="xuat"></p>
+	<select id="chon" onchange="ThayDoiChon()">
+		<option>Việt Nam</option>
+		<option>USA</option>
+		<option>Pháp</option>
+	</select>
+	<p  class="demo">Thẻ p1</p>
+	<p>Thẻ p2</p>
+	<p class="demo">Thẻ p3</p>
+	<input type="button" id="btnTagName" value="Lấy giá trị by tag name" onclick="LayGiaTriThePByTagName(0)" />
+	<input type="button" id="btnTagName" value="Lấy giá trị by class name" onclick="LayGiaTriThePByClass(0)" />
+	<script src="basic.js"></script>
+</body>
+</html>

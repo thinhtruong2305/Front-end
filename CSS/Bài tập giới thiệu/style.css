@@ -1,0 +1,19 @@
+#container{
+    background: #9ED3D7;
+    width: 500px;
+    height: 300px;
+    border: solid 1px black;
+}
+#tieude1{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+.tieude2{
+    text-align: center;
+    color: green;
+}
+p{
+    padding-left: 30px;
+    font-size: 20px;
+}

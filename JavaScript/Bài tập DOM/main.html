@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tạo bảng tự động</title>
+	<script type="text/javascript">
+		//Khởi tạo không tham số
+		var now = new Date();
+		var dayMonthYear = new Date(2015, 09, 20);
+		var dayMonthYearTimeMinuteSecond = new Date(2015, 09, 20, 12, 20, 30);
+		alert("Ngày hiện tại: " + now + ", Ngày hôm qua: " + new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1) + ", ngày tháng năm: " + dayMonthYear + ", ngày tháng năm giờ phút giây" + dayMonthYearTimeMinuteSecond);
+	</script>
+</head>
+<body>
+	<span>Số dòng: </span><input type="text" id="soDong"/>
+	<br/>
+	<span>Số cột: </span><input type="text" id="soCot"/>
+	<br/>
+	<input type="button" id="taoBang" value="Tạo bảng" onclick="KiemTraNhap()">
+	<br/>
+	<div id="container">
+		
+	</div>
+	<br />
+	<span>Chọn tháng: </span>
+	<select>
+		<script type="text/javascript">
+			for (var i = 1; i <= 12; i++) {
+				document.write("<option> tháng" + i + "<option/>")
+			}
+		</script>
+	</select>
+	<br/>
+	<input type="button" value="Chuỗi" onclick="Chuoi()">
+	<button onclick="ThongBao()">Thông báo</button>
+	<button onclick="XacNhan()">Xác nhận</button>
+	<button onclick="NhapLieu()">Nhập liệu</button>
+	<br />
+	<img id="myImage" onclick="ChangeImage()" src="https://img.icons8.com/carbon-copy/100/000000/light-off--v2.png"/>
+	<script src="../Bài tập DOM/content/js/DOM.js"></script>
+</body>
+</html>
