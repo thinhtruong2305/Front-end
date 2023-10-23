@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Tag</title>
+</head>
+<style> 
+    /* Hiện thị nội dung khác dòng */
+    /* dt { 
+        font-weight: bold; 
+        color: green; 
+    } 
+
+    dt::after { 
+        content: ":"; 
+    } */
+    /* Hiện thị nội dung cùng dòng */
+    dt { 
+            float: left; 
+            clear: left; 
+            width: 110px; 
+            font-weight: bold; 
+            color: green; 
+        } 
+  
+        dt::after { 
+            content: ":"; 
+        } 
+  
+        dd { 
+            margin: 0 0 0 80px; 
+            padding: 0 0 0.5em 0; 
+        }
+</style> 
+<body>
+    <dl> 
+        <dt>Name</dt> 
+        <dd>Cristiano Ronaldo</dd> 
+        <dt>Date of birth</dt> 
+        <dd>5 February 1985 (age 35)</dd> 
+        <dt>Nationality</dt> 
+        <dd>Portugal</dd> 
+        <dt>Profession</dt> 
+        <dd>Footballer</dd> 
+    </dl>
+     <!-- ol: ordered list -->
+     <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+     </ol>
+     <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+     </ol>
+     <!-- ul: unordered list -->
+     <ul style="list-style-type: disc;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+     </ul>
+     <!-- NestList -->
+     <ul>
+        <li>Drink
+            <ol type="1">
+                <li>Coffee</li>
+                <li>Tea</li>
+            </ol>
+        </li>
+        <li>Cocktail
+            <ul>
+                <li>Ramos Gin Fizz</li>
+            </ul>
+        </li>
+     </ul>
+</body>
+</html>
